@@ -10,6 +10,9 @@
     <StartupObject>Virus_Brasileiro.Program</StartupObject>
     <SignAssembly>False</SignAssembly>
     <AssemblyOriginatorKeyFile>F:\arquivos\Dowloads\a.png</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>brasil.ico</ApplicationIcon>
+    <ErrorReport>none</ErrorReport>
+    <PackageIcon>externaaaal.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -17,7 +20,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ilmerge" Version="3.0.40" />
+    <Content Include="brasil.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\arquivos\Dowloads\externaaaal.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +36,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +48,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

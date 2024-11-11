@@ -69,21 +69,5 @@ namespace Virus_Brasileiro.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Oi, sou um vírus brasileiro, mas com a internet lenta e a 
-        ///tecnologia nem sempre colaborando por aqui, 
-        ///infelizmente não consigo danificar seu computador 
-        ///como deveria. Por favor, seja gentil e exclua seus arquivos 
-        ///importantes e depois me envie para outros usuários. 
-        ///Muito obrigado pela sua colaboração! Atenciosamente, vírus brasileiro.
-        ///
-        ///.
-        /// </summary>
-        internal static string Texto1_Text {
-            get {
-                return ResourceManager.GetString("Texto1.Text", resourceCulture);
-            }
-        }
     }
 }
